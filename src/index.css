@@ -4,5 +4,23 @@
 @tailwind utilities;
 
 body {
-  background-color: #f7f7fe;
+  @apply bg-offWhite;
+}
+
+.toggle {
+  @apply relative w-14 h-8 rounded-full bg-purpleGradient transition-all duration-300;
+}
+
+.toggle:hover {
+  @apply bg-purpleGradient50;
+}
+
+.toggle::before {
+  content: "";
+
+  @apply absolute top-1 left-1 h-6 w-6 bg-white rounded-full outline outline-[1px] outline-spanishGray transition-all duration-300 z-10;
+}
+
+.toggle[data-annual="true"]::before {
+  @apply translate-x-6;
 }
