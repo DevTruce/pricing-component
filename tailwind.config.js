@@ -24,10 +24,9 @@ module.exports = {
       },
 
       backgroundImage: {
+        purpleGradient: "linear-gradient(180deg, #A2A7F0 0%, #696EDD 100%)",
         purpleGradient50:
           "linear-gradient(180deg, rgba(162, 167, 240, 0.5) 0%, rgba(105, 110, 221, 0.5) 100%)",
-
-        purpleGradient: "linear-gradient(180deg, #A2A7F0 0%, #696EDD 100%)",
         topImage: "url('./images/bg-top.svg')",
         bottomImage: "url('./images/bg-bottom.svg')",
       },

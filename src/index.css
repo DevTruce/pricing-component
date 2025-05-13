@@ -24,3 +24,11 @@ body {
 .toggle[data-annual="true"]::before {
   @apply translate-x-6;
 }
+
+.hr-light {
+  @apply bg-white opacity-25;
+}
+
+.hr-dark {
+  @apply bg-lightGray opacity-25;
+}
