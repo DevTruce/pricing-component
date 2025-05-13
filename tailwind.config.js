@@ -13,8 +13,10 @@ module.exports = {
       colors: {
         white: "#FFFFFF",
         offWhite: "#F7F7FE",
-        darkGrey: "#4A4D60",
-        lightGrey: "#6E728E",
+        blue: "#6D72DE",
+        darkGray: "#4A4D60",
+        lightGray: "#6E728E",
+        spanishGray: "#979797",
       },
 
       fontFamily: {
@@ -22,6 +24,9 @@ module.exports = {
       },
 
       backgroundImage: {
+        purpleGradient50:
+          "linear-gradient(180deg, rgba(162, 167, 240, 0.5) 0%, rgba(105, 110, 221, 0.5) 100%)",
+
         purpleGradient: "linear-gradient(180deg, #A2A7F0 0%, #696EDD 100%)",
         topImage: "url('./images/bg-top.svg')",
         bottomImage: "url('./images/bg-bottom.svg')",
