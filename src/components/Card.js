@@ -50,7 +50,7 @@ export default function Card({ card, annualBilling }) {
             : "bg-purpleGradient text-white hover:text-blue hover:border-blue "
         }`}
       >
-        LEARN MORE
+        <a href="#learn-more">LEARN MORE</a>
       </button>
     </div>
   );
