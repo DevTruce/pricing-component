@@ -1,20 +1,27 @@
-import { useState } from "react";
-
-export default function Header() {
-  const [annualBilling, setAnnualBilling] = useState(false);
-
+export default function Header({ annualBilling, setAnnualBilling }) {
   function handleBillingToggle() {
     setAnnualBilling(cur => !cur);
   }
 
+  function handleBillingSelect(e) {
+    const value = e.target.innerHTML;
+    if (value === "Annually") setAnnualBilling(false);
+    if (value === "Monthly") setAnnualBilling(true);
+  }
+
   return (
     <header className=" container flex flex-col gap-10">
-      <h1 className="text-[2rem] font-bold text-lightGray text-center mt-16">
+      <h1 className="text-[2rem] font-bold text-lightGray text-center ">
         Our Pricing
       </h1>
 
       <div className=" flex flex-row items-center mx-auto gap-6">
-        <span className="text-lightGray font-bold opacity-50">Annually</span>
+        <span
+          onClick={e => handleBillingSelect(e)}
+          className="text-lightGray font-bold opacity-50 cursor-pointer"
+        >
+          Annually
+        </span>
 
         <div
           onClick={handleBillingToggle}
@@ -22,7 +29,12 @@ export default function Header() {
           className={`toggle`}
         ></div>
 
-        <span className="text-lightGray font-bold opacity-50">Monthly</span>
+        <span
+          onClick={e => handleBillingSelect(e)}
+          className="text-lightGray font-bold opacity-50 cursor-pointer"
+        >
+          Monthly
+        </span>
       </div>
     </header>
   );

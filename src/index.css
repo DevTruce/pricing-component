@@ -8,7 +8,7 @@ body {
 }
 
 .toggle {
-  @apply relative w-14 h-8 rounded-full bg-purpleGradient transition-all duration-300;
+  @apply relative w-14 h-8 rounded-full bg-purpleGradient transition-all duration-300 cursor-pointer;
 }
 
 .toggle:hover {
