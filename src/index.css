@@ -32,3 +32,10 @@ body {
 .hr-dark {
   @apply bg-lightGray opacity-25;
 }
+
+/* .multi-bg {
+  background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 0 left 100%, left bottom;
+  background-size: 29.5rem 47.3125rem, 22rem 18rem;
+} */
