@@ -2,31 +2,32 @@ export default function Card({ card, annualBilling }) {
   console.log("Card Rendered:", card.tier, "| annualBilling:", annualBilling);
   return (
     <div
-      className={`flex flex-col rounded-[0.625rem] text-center mb-8 p-7 overflow-hidden shadow-xl ${
+      className={`flex flex-col rounded-[0.625rem] text-center mb-8 p-7 overflow-hidden shadow-xl min-w-[20.375rem] lg:min-w-[21.875rem] box-border ${
         card.bestValue ? "bg-purpleGradient" : "bg-white"
       } ${card.tier === "Basic" && "lg:rounded-r-none"} ${
         card.tier === "Master" && "lg:rounded-l-none"
       } ${card.tier === "Professional" && "lg:scale-y-110"}`}
     >
+      {/* card tier */}
       <h2
-        className={`font-bold text-[1.125rem] mb-7 ${
+        className={`font-bold text-[1.125rem] mb-7  ${
           card.bestValue ? "text-white" : "text-lightGray"
         }`}
       >
         {card.tier}
       </h2>
-      <h3
-        className={` font-bold text-[4.5rem] ${
+
+      {/* card pricing */}
+      <div
+        className={` font-bold text-[4.5rem] flex flex-row items-center mx-auto ${
           card.bestValue ? "text-white" : "text-darkGray"
         }`}
       >
-        <div className="flex flex-row items-center">
-          <span className="text-[2.5rem]">$</span>
-          <span className="">
-            {annualBilling ? card.yearlyCost : card.monthlyCost}
-          </span>
-        </div>
-      </h3>
+        <span className="text-[2.5rem]">$</span>
+        <span className="pl-3 ">
+          {annualBilling ? card.yearlyCost : card.monthlyCost}
+        </span>
+      </div>
 
       <ul
         className={`flex flex-col gap-5 font-bold mt-7 mb-7 ${
