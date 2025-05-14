@@ -1,11 +1,6 @@
 export default function Card({ card, annualBilling }) {
-  function handleActiveCard() {
-    console.log(card);
-  }
-
   return (
     <div
-      onClick={handleActiveCard}
       className={`flex flex-col rounded-[0.625rem] text-center mb-8 p-7 overflow-hidden shadow-xl ${
         card.bestValue ? "bg-purpleGradient" : "bg-white"
       } ${card.tier === "Basic" && "lg:rounded-r-none"} ${
