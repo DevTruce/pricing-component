@@ -18,7 +18,7 @@
 <h3 align="center">Pricing Component</h3>
 
   <p align="center">
-    completed frontend mentor challenge
+    A clean and responsive pricing card UI. Ideal for SaaS or subscription services.
     <br />
     <br />
     <a href="https://devtruce.github.io/pricing-component/" target="_blank">View Demo</a>
