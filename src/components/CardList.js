@@ -31,7 +31,7 @@ export default function CardList({ annualBilling }) {
     },
   ];
   return (
-    <div className=" flex flex-col lg:flex-row mt-16 xl:mt-24">
+    <div className=" flex flex-col lg:flex-row">
       <Card card={cards[0]} annualBilling={annualBilling} />
       <Card card={cards[1]} annualBilling={annualBilling} />
       <Card card={cards[2]} annualBilling={annualBilling} />

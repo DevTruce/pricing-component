@@ -15,7 +15,7 @@ export default function Header({ annualBilling, setAnnualBilling }) {
         Our Pricing
       </h1>
 
-      <div className=" flex flex-row items-center mx-auto gap-6">
+      <div className=" flex flex-row items-center mx-auto gap-6 mb-20">
         <span
           onClick={e => handleBillingSelect(e)}
           className="text-lightGray font-bold opacity-50 cursor-pointer"
