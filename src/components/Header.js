@@ -5,8 +5,8 @@ export default function Header({ annualBilling, setAnnualBilling }) {
 
   function handleBillingSelect(e) {
     const value = e.target.innerHTML;
-    if (value === "Annually") setAnnualBilling(false);
-    if (value === "Monthly") setAnnualBilling(true);
+    if (value === "Annually") setAnnualBilling(true);
+    if (value === "Monthly") setAnnualBilling(false);
   }
 
   return (

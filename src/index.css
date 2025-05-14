@@ -18,11 +18,11 @@ body {
 .toggle::before {
   content: "";
 
-  @apply absolute top-1 left-1 h-6 w-6 bg-white rounded-full outline outline-[1px] outline-spanishGray transition-all duration-300 z-10;
+  @apply absolute top-1 right-1 h-6 w-6 bg-white rounded-full outline outline-[1px] outline-spanishGray transition-all duration-300 z-10;
 }
 
 .toggle[data-annual="true"]::before {
-  @apply translate-x-6;
+  @apply -translate-x-6;
 }
 
 .hr-light {

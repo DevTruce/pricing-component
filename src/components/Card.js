@@ -1,4 +1,5 @@
 export default function Card({ card, annualBilling }) {
+  console.log("Card Rendered:", card.tier, "| annualBilling:", annualBilling);
   return (
     <div
       className={`flex flex-col rounded-[0.625rem] text-center mb-8 p-7 overflow-hidden shadow-xl ${
@@ -22,7 +23,7 @@ export default function Card({ card, annualBilling }) {
         <div className="flex flex-row items-center">
           <span className="text-[2.5rem]">$</span>
           <span className="">
-            {!annualBilling ? card.yearlyCost : card.monthlyCost}
+            {annualBilling ? card.yearlyCost : card.monthlyCost}
           </span>
         </div>
       </h3>
