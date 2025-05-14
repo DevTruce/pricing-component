@@ -6,7 +6,7 @@ export default function Card({ card, annualBilling }) {
         card.bestValue ? "bg-purpleGradient" : "bg-white"
       } ${card.tier === "Basic" && "lg:rounded-r-none"} ${
         card.tier === "Master" && "lg:rounded-l-none"
-      } ${card.tier === "Professional" && "lg:scale-y-110"}`}
+      } ${card.tier === "Professional" && "lg:self-stretch lg:py-12"}`}
     >
       {/* card tier */}
       <h2
